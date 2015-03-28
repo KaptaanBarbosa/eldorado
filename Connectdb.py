@@ -15,7 +15,7 @@ c = conn.cursor()
 
 
 def createDB():
-    c.execute("CREATE TABLE knowledgeBase (unix REAL, datestamp TEXT, namedEntity TEXT, relatedWord TEXT)")
+    c.execute("CREATE TABLE wordsTable (id TEXT, datestamp TEXT, words TEXT, Tags TEXT)")
     c.commit()
 
 
