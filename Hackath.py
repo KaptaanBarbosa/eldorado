@@ -11,7 +11,7 @@ def root():
 
 @app.route('/getTagText')
 def gettagtext():
-
+    ## to remove make the call post so that data comes from user side
     contentArray =['Starbucks is not doing very well lately.',
                'Overall, while it may seem there is already a Starbucks on every corner, Starbucks still has a lot of room to grow.',
                'They just began expansion into food products, which has been going quite well so far for them.',

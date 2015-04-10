@@ -11,11 +11,8 @@ class WordTagger(object):
            for itemindex in range(len(contentArray)):
                 tokenized = nltk.word_tokenize(contentArray[itemindex])
                 tagged = nltk.pos_tag(tokenized)
-                taggedWordsList.append(tagged)
-                for index in range(len(tagged)):
-                    print("########",tagged[index])
-                    wordMap[index] = tagged[index];
-                    print("wordmap ****",wordMap);
+                print("wordmap ****",itemindex,tagged);
+                wordMap[itemindex] = tagged;
 
            return wordMap;
 
